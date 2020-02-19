@@ -3,6 +3,7 @@
   <head>
     <title>catbook</title>
     <%= csrf_meta_tags %>
+    <script src="jquery-3.4.1.js"></script>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
@@ -24,5 +25,6 @@
     </ul>
     
     <%= yield %>
+    <script src='interface.js'></script>
   </body>
 </html>
