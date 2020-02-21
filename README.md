@@ -1,6 +1,6 @@
 # CatBook
 
-A Facebook clone by Catbook, Inc. The program allows users to **sign up**, **log in/out**, **post** to a timeline, and **delete/update** their own posts.
+A Facebook clone by Catbook, Inc. The program allows users to **sign up**, **log in/out**, **post** to a timeline, **post** to a user's wall, post **images**, **comment** and **like** posts, **delete/update** comments, and **delete/update** their own posts,.
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/1cdf45b157d192f356f6/maintainability)](https://codeclimate.com/github/meghaniankov/acebook-catbook-inc/maintainability)
 
@@ -31,6 +31,11 @@ bundle install
 bin/rails db:create
 bin/rails db:migrate
 ```
+
+### Active Storage Image Processing
+If you do not already have ImageMagick installed, run:
+
+```brew install imagemagick```
 
 ## Running the program
 
