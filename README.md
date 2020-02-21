@@ -3,6 +3,7 @@
 A Facebook clone by Catbook, Inc. The program allows users to **sign up**, **log in/out**, **post** to a timeline, **post** to a user's wall, post **images**, **comment** and **like** posts, **delete/update** comments, and **delete/update** their own posts,.
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/1cdf45b157d192f356f6/maintainability)](https://codeclimate.com/github/meghaniankov/acebook-catbook-inc/maintainability)
+[![Build Status](https://travis-ci.com/meghaniankov/acebook-catbook-inc.svg?branch=master)](https://travis-ci.com/meghaniankov/acebook-catbook-inc)
 
 ## The Team
 
