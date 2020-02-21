@@ -22,6 +22,10 @@
   <div id='form-text-area'>
     <%= form.text_area :message, :maxlength => 500, :size => 40, :id => "area" %>
   </div>
+
+  <%= form.label :image %>
+  <%= form.file_field :image %>
+  
   <div id='form-submit-btn'>
     <%= form.submit "Submit" %>
   </div>

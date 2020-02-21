@@ -43,6 +43,12 @@
         <%= simple_format(post.message, {}, wrapper_tag: "div") %>
       </div>
 
+      <div id='post-img'>
+        <% if post.image.attached? %>
+          <%= image_tag post.image.variant(combine_options: { gravity: "Center", resize: "550x550"}), id: 'img' %>
+        <%end%>
+      </div>
+
       <div id='likes'>
       <% pre_like = post.likes.find { |like| like.user_id == current_user.id }%>
         <% if pre_like %>
