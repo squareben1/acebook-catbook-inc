@@ -47,7 +47,7 @@
 
           <div id='post-img'>
           <% if post.image.attached? %>
-            <%= image_tag post.image.variant(resize_to_fill: [368, 368, { gravity: 'Center' }]), id: 'img'%>
+            <%= image_tag post.image.variant(combine_options: { gravity: "Center", resize: "550x550"}), id: 'img' %>
           <%end%>
         </div>  
 
