@@ -30,7 +30,7 @@
 
       <div id='post-img'>
         <% if @post.image.attached? %>
-          <%= image_tag @post.image.variant(combine_options: { gravity: "Center", resize: "550x550"}), id: 'img' %>
+          <%= image_tag @post.image, id: 'img' %>
         <%end%>
       </div>
 
