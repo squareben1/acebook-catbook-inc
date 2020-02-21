@@ -24,10 +24,15 @@
           <div id='form-header'>
             <%= form.label :message %>
           </div>
+
         <div class="card">
         <div id='form-text-area'>
           <%= form.text_area :message, :maxlength => 500, :size => 40, :id => "area" %>
         </div>
+        
+          <%= form.label :image %>
+          <%= form.file_field :image %>
+   
         <%= form.hidden_field :wall_id, value: params[:wall_id] %>
         <div id='form-submit-btn'>
           <%= form.submit "Submit" %>

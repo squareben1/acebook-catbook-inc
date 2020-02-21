@@ -12,6 +12,12 @@ class PostsController < ApplicationController
 
   def create
     @current_user = current_user
+    p 'post params'
+    p post_params
+    p 'current user'
+    p @current_user
+    p 'posts'
+    p @current_user.posts
     @post = @current_user.posts.create(post_params)
     redirection(@post)
   end
@@ -67,7 +73,7 @@ class PostsController < ApplicationController
   end
 
   def post_params
-    params.require(:post).permit(:message, :wall_id)
+    params.require(:post).permit(:message, :wall_id, :image)
   end
 
   def authenticate_user

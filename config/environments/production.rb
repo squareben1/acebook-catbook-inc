@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.configure do
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
@@ -31,6 +32,8 @@ Rails.application.configure do
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
+
+  config.active_storage.service = :local
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
